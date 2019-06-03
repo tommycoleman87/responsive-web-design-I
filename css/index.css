@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5 {
 
 @media(max-width: 800px) {
     .main-container {
-        width: 100%;
+        width: 95%;
     }
 }
 
@@ -113,14 +113,23 @@ h1, h2, h3, h4, h5 {
 @media(max-width: 800px) {
     nav a {
         order: 2;
+        justify-content: space-around;
     }
 }
 
 @media(max-width: 500px) {
     nav a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
         border-top: 1px solid grey;
+        height: 30px;
         }
+    
+    nav a:nth-child(6) {
+        border-bottom: 1px solid grey;
+    }
 }
 
 .header-left {
@@ -156,6 +165,12 @@ header h1 {
 	font-size: 80px;
 }
 
+@media(max-width: 500px) {
+    header h1 {
+        font-size: 45px;
+    }
+}
+
 header button {
 	height: 30px;
 	width: 150px;
@@ -175,10 +190,26 @@ header button {
 	width: 49%;
 }
 
+@media(max-width: 500px) {
+    .top-content-right {
+        width: 100%;
+        padding-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
 .top-content-left {
 	text-align: left;
 	display: inline-block;
 	width: 49%;
+}
+
+@media(max-width: 500px) {
+    .top-content-left {
+        width: 100%;
+        padding-left: 10px;
+    }
 }
 
 .middle-img {
@@ -197,12 +228,31 @@ header button {
 	display: inline-block;
 	width: 32%;
 }
+@media(max-width: 800px) {
+    .bottom-content div {
+        padding-left: 10px; 
+    }
+}
+
+@media(max-width: 500px) {
+    .bottom-content div {
+        width: 100%;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
 
 .copy-right {
 	margin-top: 50px;
 	text-align: center;
 }
 
+@media(max-width: 800px) {
+    .contact {
+        padding-left: 10px;
+    }
+}
 
 
 
